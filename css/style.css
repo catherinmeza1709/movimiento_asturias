@@ -1,0 +1,650 @@
+* {
+    margin: 0; 
+    padding: 0;
+    
+}
+
+html{
+    overflow-x: hidden;
+}
+
+
+h1, h2, h3, h4, h5, h6, p, a{
+	font-family: 'Roboto', sans-serif;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+div.modal img{
+    width: 100%;
+}
+
+@font-face {
+  font-family: "Omiwa";
+  src: url("../fonts/Omiwa-ALPJD.otf");
+}
+
+.Omiwa{
+    font-family: "Omiwa";
+    color: #0D5169;
+}
+
+.nosotrosText{
+        text-align: justify;
+    }
+
+
+/*--------------- MENU------------------- */
+
+section#logo{
+    display: none;
+    padding: 50px;
+}
+
+section#logo img{
+    width: 150px;
+    height: 130px;
+}
+
+div.menu_bar{
+    display: none;
+}
+
+div.menu_bar img{
+    width: 30%;
+    height: 100%;
+    padding: 20px;
+    display: none;
+}
+
+header div.menu_bar span {
+    float:right;
+    font-size:40px;
+    padding: 20px;
+}
+
+nav {
+	width: 100%;
+    height: 100px;
+	background: #fff;
+    box-shadow: 2px 10px 23px -8px rgba(0,0,0,0.29);  
+}
+
+nav li {
+	padding: 24px 10px;
+}
+
+nav li a {
+	color: #9b9b9b;
+}
+
+nav.menu ul{
+    list-style:none;
+    display: flex;
+    align-items: center;
+    
+}
+
+nav.menu ul a {
+    text-decoration: none;
+}
+
+nav.menu ul a:hover {
+    color: #2e2c2c;
+}
+
+nav.menu ul li img.menuImg{
+    width: 100px;
+    height: 50px;
+}
+
+.btnMenu{
+    background-color: #5C91C9;
+    border: 0;
+    border-radius: 5px 5px 5px 5px;
+    text-align: center;
+    height: 50px;
+    display: inline-block;
+    width: 100px;
+    color: #fff;
+
+}
+
+
+/*--------------- INICIO------------------- */
+
+section#inicio{
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+}
+
+div.banner{
+	width: 100%;
+	height: 50%;
+    padding-top: 200px;
+    color: #FFF;
+    
+}
+
+.flechaBanner a{
+    text-decoration: none;
+    color: #FFF;
+    font-size: 2em;
+}
+
+/*--------------- GALERIA------------------- */
+section#galeria{
+	color: #FFF;
+    margin-top: 130px;
+    padding: 100px 100px;
+    background-image: url(../img/fondo_galeria.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+	
+}
+
+section#galeria h2{
+	font-weight: bold;
+	margin-bottom: -10px
+}
+
+
+section#galeria div.carousel{
+	width: 60%;
+	margin: 30px auto;	
+}
+
+section#galeria div.carousel div.carousel-inner{
+	height: auto;
+}
+
+
+/*--------------- NOSOTROS------------------- */
+
+section#nosotros{
+	padding-bottom: 100px;
+    margin-top: 130px;
+}
+
+.sobremiTitle1{
+	display: none;
+}
+
+section#nosotros img.sobremi_img{
+	width: 300px;
+	height: 300px;
+}
+
+section#nosotros h2{
+	margin-bottom: -10px;
+	font-weight: bold;
+	color: #5C91C9;
+}
+
+section#nosotros p{
+	margin-top: 20px;
+}
+
+
+/*--------------- EVENTOS------------------- */
+
+section#eventos{
+	margin-top: 130px;
+	padding-bottom: 100px;
+		
+}
+
+section#eventos h2{
+	margin-bottom: -10px;
+	font-weight: bold;
+	color: #49C1BF;
+}
+
+section#eventos h3{
+    width: auto;
+    font-weight: bold;
+    color: #49C1BF;
+}
+
+section#eventos p{
+	margin-top: 20px;
+}
+
+section#eventos  div.proyectoImg img.card-img-top{
+	padding: 10px;
+}
+
+div.proyectoImg{
+    padding: 50px;
+}
+
+div.cardSub p{
+    color: #49C1BF;
+    font-weight: bold;
+}
+
+/*--------------- CONTACTO------------------- */
+
+section#contacto {
+	margin-top: 130px;
+	margin-bottom: 30px;
+}
+
+section#contacto h2{
+	font-weight: bold;
+	color: #5C91C9;
+}
+
+section#contacto  form input,
+section#contacto  form textarea{
+    width: 65%;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+section#contacto  input{
+	height: 50px;
+}
+
+section#contacto  textarea{
+  min-height: 150px;
+  max-height: 180px;
+}
+
+section#contacto  input.boton{
+  border: 0;
+  width: 150px;
+  background: #5C91C9;
+  color: #FFF;
+  padding: 0;
+  cursor: pointer;
+ 
+}
+
+section#contactoTaller i.fa{
+    font-size: 4em;
+    color: #0D5169;
+}
+
+.contactoImg{
+	width: 75%;
+	height: 85%;
+}
+
+/*--------------FOOTER-----------------*/
+footer{
+    background-image: url(../img/footer.png);
+    background-size: cover;
+}
+
+footer section{
+    color: #fff;
+}
+
+footer section div a img{
+    margin: 20px;
+    width: 60px;
+    height: 60px;
+}
+
+/*--------------MEDIA QUERYS-----------------*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .linea{
+    width: 50%;
+    margin: 0 auto;
+}
+  /*--------------- MENU------------------- */
+    nav.menu ul li:nth-child(4){
+        display: none;
+    }
+    
+    nav.menu ul li{
+        border-bottom:1px solid #eaeaea;
+        width: 100%;
+        text-align: center;
+    }
+    
+    nav.menu ul {
+        flex-direction: column;
+    }
+    
+    nav {
+        width: 60%;
+        height: 100%;
+        margin:0;
+        position: fixed;
+        z-index: 100;
+        left: -100%;
+    }
+    
+    div.menu_bar{
+        position: fixed;
+        z-index:40;
+        top: 0;
+        display:block;
+        width:100%;
+        background:#fff;
+    }
+    div.menu_bar img{
+        display: inline-block;
+        width: 20%;
+    }
+    
+    div.menu_bar span.bt-menu{
+        color: black;
+        cursor: pointer;
+    }
+    
+
+    
+  /*--------------- INICIO------------------- */
+    div.banner{
+        padding-top: 25%;
+     }
+    
+  /*--------------- GALERIA------------------- */
+    section#galeria div.carousel{
+        width: 100%;
+
+    }
+
+    section#galeria div.carousel div.carousel-inner{
+        height: 100%;
+    }
+    
+ /*--------------- PROYECTOS RECIENTES------------------- */
+    section#eventos h2{
+        font-size: 50px;
+    }
+    
+    section#eventos div.card h3{
+        font-size: 25px ;
+    }
+    
+
+    section#eventos  div.proyectoImg img.card-img-top{
+        border-radius: 20px 20px 20px 20px;
+        width: 50%;
+        height: 50%;
+        margin: 0 auto;
+    }
+    
+    div.proyectoImg{
+        padding: 30px;
+    }
+ /*--------------- CONTACTO------------------- */
+    section#contacto  form input,
+    section#contacto  form textarea{
+        width: 90%;
+    }
+    
+    form.formulario{
+        margin-left: 10%;
+    }
+    
+    .contactoImg{
+        width: 80%;
+        height: 80%;
+    }
+  
+}
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+.linea{
+    width: 50%;
+    margin: 0 auto;
+}
+  /*--------------- MENU------------------- */
+    nav.menu ul li:nth-child(4){
+        display: none;
+    }
+    
+    nav.menu ul li{
+        border-bottom:1px solid #eaeaea;
+        width: 100%;
+        text-align: center;
+    }
+    
+    nav.menu ul {
+        flex-direction: column;
+    }
+    
+    nav {
+        width: 60%;
+        height: 100%;
+        margin:0;
+        position: fixed;
+        z-index: 100;
+        left: -100%;
+    }
+    
+    div.menu_bar{
+        position: fixed;
+        z-index:40;
+        top: 0;
+        display:block;
+        width:100%;
+        background:#fff;
+    }
+    div.menu_bar img{
+        display: inline-block;
+        width: 20%;
+    }
+    
+    div.menu_bar span.bt-menu{
+        color: black;
+        cursor: pointer;
+    }
+    
+    
+  /*--------------- INICIO------------------- */
+    div.banner{
+        padding-top: 25%;
+     }
+
+  /*--------------- GALERIA------------------- */
+    section#galeria div.carousel{
+        width: 100%;
+
+    }
+
+    section#galeria div.carousel div.carousel-inner{
+        height: 100%;
+    }
+
+    section#galeria{
+        padding: 20px;
+    }
+    
+  /*--------------- INFOrMACION EVENTO------------------- */
+
+    
+  /*--------------- PROYECTOS RECIENTES------------------- */
+    
+    section#eventos h2{
+        font-size: 50px;
+    }
+    
+    section#eventos div.card h3{
+        font-size: 25px ;
+    }
+    
+
+    section#eventos  div.proyectoImg img.card-img-top{
+        border-radius: 20px 20px 20px 20px;
+        width: 60%;
+        height: 50%;
+        margin: 0 auto;
+    }
+    
+    div.proyectoImg{
+        padding: 30px;
+    }
+    
+  /*--------------- CONTACTO------------------- */
+    section#contacto  form input,
+    section#contacto  form textarea{
+        width: 90%;
+    }
+    
+    form.formulario{
+        margin-left: 10%;
+    }
+    
+    .divContacto:nth-child(1){
+		order: 2;
+	}
+	.divContacto:nth-child(2){
+		order: 1;
+	}
+  
+  /*--------------FOOTER-----------------*/
+    footer section p{
+        font-size: 15px;
+    }
+    
+    footer section div a img{
+        margin: 10px;
+        width: 70px;
+        height: 70px;
+    }
+  
+}
+
+
+@media (min-width: 0px) and (max-width: 480px) {
+    .linea{
+    width: 80%;
+    margin: 0 auto;
+}
+.Omiwa{
+    font-size: 25px;
+}
+  /*--------------- MENU------------------- */
+    section#logo{
+        display: none;
+    }
+    
+    nav.menu ul li:nth-child(4){
+        display: none;
+    }
+    
+    nav.menu ul li{
+        border-bottom:1px solid #eaeaea;
+        width: 100%;
+        text-align: center;
+    }
+    
+    nav.menu ul {
+        flex-direction: column;
+    }
+    
+    nav {
+        width: 60%;
+        height: 100%;
+        margin:0;
+		position: fixed;
+        z-index: 100;
+        left: -100%;
+    }
+    
+    div.menu_bar{
+        position: fixed;
+        z-index:40;
+        top: 0;
+        display:block;
+		width:100%;
+		background:#fff;
+    }
+    div.menu_bar img{
+        display: inline-block;
+    }
+    
+    div.menu_bar span.bt-menu{
+        color: black;
+        cursor: pointer;
+    }
+    
+    
+    
+  /*--------------- INICIO------------------- */
+    div.banner{
+        padding-top: 150px;
+    }
+
+  /*--------------- GALERIA------------------- */
+    section#galeria div.carousel{
+        width: 100%;
+
+    }
+
+    section#galeria div.carousel div.carousel-inner{
+        height: 100%;
+    }
+    section#galeria{
+        padding: 20px;
+    }
+
+    .nosotrosText{
+        text-align: center;
+    }
+
+  /*--------------- INFOrMACION EVENTO------------------- */
+  section#infoEvento{
+    text-align: justify;
+  }
+  .niño{
+    display: none;
+  }
+  /*--------------- PROYECTOS RECIENTES------------------- */
+    section#eventos  div.proyectoImg img.card-img-top{
+        border-radius: 20px 20px 20px 20px;
+        width: 100%;
+        height: 100%;
+    }
+    
+    div.proyectoImg{
+        padding: 30px;
+    }
+    
+  /*--------------- CONTACTO------------------- */
+    section#contacto  form input,
+    section#contacto  form textarea{
+        width: 90%;
+    }
+    
+    form.formulario{
+        margin-left: 10%;
+    }
+    
+    .divContacto:nth-child(1){
+		order: 2;
+	}
+	.divContacto:nth-child(2){
+		order: 1;
+	}
+    
+    .iconos  {
+        font-size: 7px;
+    }
+
+  
+  /*--------------FOOTER-----------------*/
+    footer section p{
+        font-size: 12px;
+    }
+    
+    footer section div a img{
+        margin: 10px;
+        width: 50px;
+        height: 50px;
+    }
+  
+}
